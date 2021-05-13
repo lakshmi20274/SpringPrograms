@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="emp" class="com.ojas.Employee">
+		<property name="eId" value="1"></property>
+		<property name="eName" value="prakash"></property>
+		<property name="sal" value="25000"></property>
+		<property name="dept" ref="Dept1"></property>
+		<property name="skillset">
+			<list>
+				<value>Core Java</value>
+				<value>Advance Java</value>
+				<value>Spring</value>
+				<value>Junit</value>
+				<value>DataBase</value>
+			</list>
+		</property>
+		<property name="phoneNumber">
+			<set>
+				<value>9676977956</value>
+				<value>1234567890</value>
+				<value>7382255101</value>
+				<value>9676977956</value>
+			</set>
+
+		</property>
+		<property name="emailId">
+			<map>
+				<entry key="20" value="prakash@ojas.com" />
+				<entry key="30" value="bhargavi@ojas.com" />
+				<entry key="400" value="manikumar@ojas.com" />
+				<entry key="40" value="nagaraju@ojas.com" />
+				<entry key ="40" value="prakash@ojas.com"></entry>
+			</map>
+		</property>
+		</bean>
+		<bean id="Dept1" class="com.ojas.Department">
+		<property name="deptNo" value="20256"></property>
+		<property name="deptName" value="Spring FrameWorks"></property>
+		</bean>
+</beans>

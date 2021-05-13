@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="embean" class="beans.Employee" >
+    
+    <property name="eid"  value="101"></property>
+    <property name="enam" value="lakshmi"></property>
+    <property name="skillset" >
+    <list>
+    <value>Corejava</value>
+     <value>Advanced java</value>
+      <value>Spring</value>
+       <value>Junit</value>
+       <value>Database</value>
+    </list>
+    </property>
+    <property name="phoneno" >
+    <set>
+    <value>9666160442</value>
+     <value>79995784422</value>
+     <value>9705723065</value>
+     <value>79995784422</value>
+    </set>
+    </property>   
+    <property name="emailid">
+    <map>
+    <entry key="100" value="abc@gmail.com"></entry>
+    <entry key="101" value="lakshmi@gmail.com"></entry>
+    <entry key="102" value="raju@gmail.com"></entry>
+    </map>
+    </property>
+    <property name="dept" ref ="dept1"></property>
+</bean>
+<bean id="dept1" class="beans.Department">
+<property name="did"  value="101"></property>
+    <property name="dname" value="sailpoint"></property>
+</bean>
+
+</beans>

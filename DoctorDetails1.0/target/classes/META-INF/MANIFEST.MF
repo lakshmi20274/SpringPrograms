@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: DoctorDetails1.0
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dell
+Implementation-Vendor-Id: com.example
+Build-Jdk: 1.8.0_31
+Implementation-URL: https://spring.io/projects/spring-boot/DoctorDetai
+ ls1.0
+Created-By: Maven Integration for Eclipse
+
